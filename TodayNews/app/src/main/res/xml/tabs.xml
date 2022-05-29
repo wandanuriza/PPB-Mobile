@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tabs>
     <tab
-        drawable="@drawable/ic_baseline_home_24"
-        text="@string/Home" />
-
-    <tab
         drawable="@drawable/ic_baseline_science_24"
         text="@string/Science" />
 
@@ -13,10 +9,14 @@
         text="@string/Sports" />
 
     <tab
+        drawable="@drawable/ic_baseline_home_24"
+        text="@string/Home" />
+
+    <tab
         drawable="@drawable/ic_baseline_local_hospital_24"
         text="@string/Health" />
 
     <tab
-        drawable="@drawable/ic_baseline_music_note_24"
-        text="@string/Enter" />
+        drawable="@drawable/ic_baseline_computer_24"
+        text="@string/Technology" />
 </tabs>

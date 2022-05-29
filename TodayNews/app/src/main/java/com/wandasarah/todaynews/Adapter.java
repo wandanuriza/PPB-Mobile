@@ -1,9 +1,12 @@
 package com.wandasarah.todaynews;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,6 +21,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     Context context;
     ArrayList<Model> modelArrayList;
+    private int lastPosition = -1;
 
     public Adapter(Context context, ArrayList<Model> modelArrayList) {
         this.context = context;
@@ -38,7 +42,36 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         holder.mainnews.setText(modelArrayList.get(position).getDescription());
         holder.auther.setText(modelArrayList.get(position).getAuther());
         holder.publishedat.setText(modelArrayList.get(position).getPublishedAt());
+
+        // Here you apply the animation when the view is bound
+        // animasi ketika scroll view
+        setAnimation(holder.itemView, position);
+
         Glide.with(context).load(modelArrayList.get(position).getUrlToImage()).into(holder.imageView);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(context,ReadNewsActivity.class);
+                in.putExtra("URL",modelArrayList.get(position).getUrl());
+
+                context.startActivity(in);
+            }
+        });
+    }
+
+    /**
+     * Here is the key method to apply the animation
+     */
+    private void setAnimation(View viewToAnimate, int position)
+    {
+        // If the bound view wasn't previously displayed on screen, it's animated
+        if (position > lastPosition)
+        {
+            Animation animation = AnimationUtils.loadAnimation(context, R.anim.slide_in);
+            viewToAnimate.startAnimation(animation);
+            lastPosition = position;
+        }
     }
 
     @Override

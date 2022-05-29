@@ -17,28 +17,29 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class ScienceFragment extends Fragment {
+public class TechnologyFragment extends Fragment {
 
     String API_KEY = "8372ecb6783543d3a7d2bb38d4f5777e";
     RecyclerView recyclerView;
     Adapter adapter;
     ArrayList<Model> modelArrayList;
     String country = "id";
-    String category = "science";
+    String category = "technology";
     private Log log;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_science,null);
+        View v = inflater.inflate(R.layout.fragment_technology,null);
 
-        recyclerView = v.findViewById(R.id.science_recyclerview);
+        recyclerView = v.findViewById(R.id.technology_recyclerview);
         modelArrayList = new ArrayList<>();
         adapter = new Adapter(getContext(),modelArrayList);
 
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
 
         getNews();
 
@@ -47,16 +48,14 @@ public class ScienceFragment extends Fragment {
 
     void getNews(){
 
-        log.v("INSIDE","inside get news");
-
-        ApiUtilities.getApiInterface().getCategory("id","science",100,API_KEY).enqueue(new Callback<MainNews>() {
+        ApiUtilities.getApiInterface().getCategory("id","technology",100,API_KEY).enqueue(new Callback<MainNews>() {
             @Override
             public void onResponse(Call<MainNews> call, Response<MainNews> response) {
 
                 int status = response.code();
                 log.v("INSIDE3",String.valueOf(status));
-
                 if (response.isSuccessful()){
+
                     modelArrayList.addAll(response.body().getArticles());
                     log.v("INSIDE2",response.body().toString());
                     adapter.notifyDataSetChanged();
@@ -68,5 +67,8 @@ public class ScienceFragment extends Fragment {
 
             }
         });
+
+
+
     }
 }

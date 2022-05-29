@@ -31,17 +31,18 @@ public class MainActivity extends AppCompatActivity {
                 switch (i){
 
                     case 0 :
-                        fragmentTransaction.replace(R.id.content,new HomeFragment());
-                        fragmentTransaction.commit();
-                        break;
-
-                    case 1 :
                         fragmentTransaction.replace(R.id.content,new ScienceFragment());
                         fragmentTransaction.commit();
                         break;
 
-                    case 2 :
+                    case 1 :
                         fragmentTransaction.replace(R.id.content,new SportsFragment());
+                        fragmentTransaction.commit();
+                        break;
+
+                    case 2 :
+
+                        fragmentTransaction.replace(R.id.content,new HomeFragment());
                         fragmentTransaction.commit();
                         break;
 
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case 4 :
-                        fragmentTransaction.replace(R.id.content,new EnterFragment());
+                        fragmentTransaction.replace(R.id.content,new TechnologyFragment());
                         fragmentTransaction.commit();
                         break;
 
