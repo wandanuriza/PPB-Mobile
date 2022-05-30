@@ -2,14 +2,28 @@ package com.wandasarah.todaynews;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.SearchManager;
+import android.content.Context;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.SearchView;
 
 import com.iammert.library.readablebottombar.ReadableBottomBar;
+
+import java.util.ArrayList;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
     ReadableBottomBar readableBottomBar;
+    String API_KEY = "8372ecb6783543d3a7d2bb38d4f5777e";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,5 +73,73 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        LoadJson("");
+    }
+
+    public void LoadJson(final String keyword) {
+
+        //instansiasi ApiInterface
+        ApiInterface apiInterface = ApiUtilities.getApiInterface();
+
+        String country = "id";
+
+        Call<MainNews> call;
+        if (keyword.length() > 0){
+            call = apiInterface.getNewsSearch(keyword,"publishedAt", API_KEY);
+        } else {
+            call = apiInterface.getNews(country,100,API_KEY);
+        }
+
+        call.enqueue(new Callback<MainNews>() {
+            @Override
+            public void onResponse(Call<MainNews> call, Response<MainNews> response) {
+                if (response.isSuccessful() && response.body().getArticles() != null) {
+                    /*if (!articles.isEmpty()){
+                        articles.clear();
+                    }*/
+                } else {
+                    modelArrayList.addAll(response.body().getArticles());
+                    adapter.notifyDataSetChanged();
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<MainNews> call, Throwable t) {
+
+            }
+        });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        final SearchView searchView = (SearchView) menu.findItem(R.id.action_search).getActionView();
+        MenuItem searchMenuItem = menu.findItem(R.id.action_search);
+
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+        searchView.setQueryHint("Search Latest  News...");
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                if(query.length() > 2){
+                    LoadJson(query);
+                }
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                LoadJson(newText);
+                return false;
+            }
+        });
+
+        searchMenuItem.getIcon().setVisible(false, false);
+        return true;
     }
 }

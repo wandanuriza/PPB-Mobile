@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
+    <!--<androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -17,22 +17,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
+        &lt;!&ndash;<ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:adjustViewBounds="true"
             android:src="@drawable/news_logo">
-        </ImageView>
+        </ImageView>&ndash;&gt;
 
-        <TextView
+        &lt;!&ndash;<TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="News"
             android:textColor="@color/black"
             android:textSize="25dp" >
-        </TextView>
+        </TextView>&ndash;&gt;
 
-    </androidx.appcompat.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>-->
 
     <FrameLayout
         android:id="@+id/content"
@@ -40,8 +40,7 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/readableBottomBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        app:layout_constraintStart_toStartOf="parent">
     </FrameLayout>
 
     <com.iammert.library.readablebottombar.ReadableBottomBar
