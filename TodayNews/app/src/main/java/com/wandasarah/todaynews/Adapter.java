@@ -20,7 +20,7 @@ import java.util.ArrayList;
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     Context context;
-    ArrayList<Model> modelArrayList;
+    public ArrayList<Model> modelArrayList;
     private int lastPosition = -1;
 
     public Adapter(Context context, ArrayList<Model> modelArrayList) {

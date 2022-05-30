@@ -2,8 +2,8 @@ package com.wandasarah.todaynews;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
 import android.app.SearchManager;
 import android.content.Context;
 import android.os.Bundle;
@@ -23,7 +23,10 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity {
 
     ReadableBottomBar readableBottomBar;
+
     String API_KEY = "8372ecb6783543d3a7d2bb38d4f5777e";
+    Adapter adapter;
+    ArrayList<Model> modelArrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,15 +72,14 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction.replace(R.id.content,new TechnologyFragment());
                         fragmentTransaction.commit();
                         break;
-
                 }
             }
         });
-
-        LoadJson("");
     }
 
+
     public void LoadJson(final String keyword) {
+
 
         //instansiasi ApiInterface
         ApiInterface apiInterface = ApiUtilities.getApiInterface();
@@ -86,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
         Call<MainNews> call;
         if (keyword.length() > 0){
-            call = apiInterface.getNewsSearch(keyword,"publishedAt", API_KEY);
+            call = apiInterface.getNewsSearch(keyword, API_KEY);
         } else {
             call = apiInterface.getNews(country,100,API_KEY);
         }
@@ -95,14 +97,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<MainNews> call, Response<MainNews> response) {
                 if (response.isSuccessful() && response.body().getArticles() != null) {
-                    /*if (!articles.isEmpty()){
-                        articles.clear();
-                    }*/
-                } else {
-                    modelArrayList.addAll(response.body().getArticles());
-                    adapter.notifyDataSetChanged();
+                    if (!modelArrayList.isEmpty()){
+                        modelArrayList.clear();
+                    }
                 }
 
+                modelArrayList = response.body().getArticles();
+                adapter.notifyDataSetChanged();
             }
 
             @Override

@@ -26,7 +26,6 @@ public interface ApiInterface {
     @GET("everything")
     Call<MainNews> getNewsSearch(
             @Query("q") String keyword,
-            @Query("sort by") String sortby,
             @Query("apikey") String apikey
     );
 }
