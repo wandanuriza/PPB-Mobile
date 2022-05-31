@@ -22,10 +22,4 @@ public interface ApiInterface {
             @Query("pageSize") int pagesize,
             @Query("apikey") String apikey
     );
-
-    @GET("everything")
-    Call<MainNews> getNewsSearch(
-            @Query("q") String keyword,
-            @Query("apikey") String apikey
-    );
 }

@@ -47,7 +47,6 @@ public class HomeFragment extends Fragment {
             @Override
             public void onResponse(Call<MainNews> call, Response<MainNews> response) {
                 if (response.isSuccessful()){
-
                     modelArrayList.addAll(response.body().getArticles());
                     adapter.notifyDataSetChanged();
                 }

@@ -20,7 +20,7 @@ import java.util.ArrayList;
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     Context context;
-    public ArrayList<Model> modelArrayList;
+    ArrayList<Model> modelArrayList;
     private int lastPosition = -1;
 
     public Adapter(Context context, ArrayList<Model> modelArrayList) {
@@ -41,10 +41,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         holder.headlines.setText(modelArrayList.get(position).getTitle());
         holder.mainnews.setText(modelArrayList.get(position).getDescription());
         holder.auther.setText(modelArrayList.get(position).getAuther());
-        holder.publishedat.setText(modelArrayList.get(position).getPublishedAt());
+        holder.publishedat.setText(modelArrayList.get(position).getPublishedAt()+"Source "+ modelArrayList.get(position).getAuther());
 
-        // Here you apply the animation when the view is bound
-        // animasi ketika scroll view
         setAnimation(holder.itemView, position);
 
         Glide.with(context).load(modelArrayList.get(position).getUrlToImage()).into(holder.imageView);
@@ -76,7 +74,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     @Override
     public int getItemCount() {
-
         return modelArrayList.size();
     }
 
