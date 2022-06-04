@@ -1,4 +1,4 @@
-package com.example.myfirstapp;
+package com.wanda.myfirstapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
