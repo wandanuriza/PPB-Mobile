@@ -1,0 +1,96 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:17:1-34:12
+INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:17:1-34:12
+INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:17:1-34:12
+INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:17:1-34:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\cb27b9c347b5cf072ac52c838d1ec020\transformed\appcompat-v7-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\ea63dd51f72c9d647d2e2deb4149d5e6\transformed\support-fragment-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\fd0c96e5ab4b6b6ff09372f81b416453\transformed\animated-vector-drawable-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\086d1e975aaa720f1e7d603a9e470b96\transformed\support-core-ui-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\edc30dc419e6851eba98657ba3db7454\transformed\support-core-utils-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\1e1d1bc87251784c50ed2f28c1d82071\transformed\support-vector-drawable-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\c68ffaec44f1f5810d519fff311a5f8d\transformed\support-compat-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Wanda\.gradle\caches\transforms-3\b30668914b6bc93308938921877b7b40\transformed\livedata-core-1.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Wanda\.gradle\caches\transforms-3\687320cfd58c614bc4f66cc08d881122\transformed\viewmodel-1.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Wanda\.gradle\caches\transforms-3\504bdf229b7a6ad44deab5bbd661da16\transformed\runtime-1.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Wanda\.gradle\caches\transforms-3\fbaa89baa5a64e6ddbc678dcefc74891\transformed\runtime-1.1.0\AndroidManifest.xml:17:1-22:12
+INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:17:1-34:12
+INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:17:1-34:12
+INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:17:1-34:12
+	package
+		ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:18:5-45
+		INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml
+		ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:17:1-34:12
+		INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml
+		ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:17:1-34:12
+		INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:17:11-69
+application
+ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:20:5-32:19
+	android:supportsRtl
+		ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:24:9-35
+	android:label
+		ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:23:9-41
+	android:icon
+		ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:22:9-43
+	android:allowBackup
+		ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:21:9-35
+	android:theme
+		ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:25:9-40
+activity#com.example.android.SimpleCalc.MainActivity
+ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:26:9-31:20
+	android:name
+		ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:26:19-77
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:27:13-30:29
+action#android.intent.action.MAIN
+ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:29:17-77
+	android:name
+		ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml:29:27-74
+uses-sdk
+INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml
+INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\cb27b9c347b5cf072ac52c838d1ec020\transformed\appcompat-v7-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\cb27b9c347b5cf072ac52c838d1ec020\transformed\appcompat-v7-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\ea63dd51f72c9d647d2e2deb4149d5e6\transformed\support-fragment-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\ea63dd51f72c9d647d2e2deb4149d5e6\transformed\support-fragment-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\fd0c96e5ab4b6b6ff09372f81b416453\transformed\animated-vector-drawable-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\fd0c96e5ab4b6b6ff09372f81b416453\transformed\animated-vector-drawable-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\086d1e975aaa720f1e7d603a9e470b96\transformed\support-core-ui-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\086d1e975aaa720f1e7d603a9e470b96\transformed\support-core-ui-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\edc30dc419e6851eba98657ba3db7454\transformed\support-core-utils-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\edc30dc419e6851eba98657ba3db7454\transformed\support-core-utils-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\1e1d1bc87251784c50ed2f28c1d82071\transformed\support-vector-drawable-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\1e1d1bc87251784c50ed2f28c1d82071\transformed\support-vector-drawable-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\c68ffaec44f1f5810d519fff311a5f8d\transformed\support-compat-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Wanda\.gradle\caches\transforms-3\c68ffaec44f1f5810d519fff311a5f8d\transformed\support-compat-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Wanda\.gradle\caches\transforms-3\b30668914b6bc93308938921877b7b40\transformed\livedata-core-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Wanda\.gradle\caches\transforms-3\b30668914b6bc93308938921877b7b40\transformed\livedata-core-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Wanda\.gradle\caches\transforms-3\687320cfd58c614bc4f66cc08d881122\transformed\viewmodel-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Wanda\.gradle\caches\transforms-3\687320cfd58c614bc4f66cc08d881122\transformed\viewmodel-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Wanda\.gradle\caches\transforms-3\504bdf229b7a6ad44deab5bbd661da16\transformed\runtime-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Wanda\.gradle\caches\transforms-3\504bdf229b7a6ad44deab5bbd661da16\transformed\runtime-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Wanda\.gradle\caches\transforms-3\fbaa89baa5a64e6ddbc678dcefc74891\transformed\runtime-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Wanda\.gradle\caches\transforms-3\fbaa89baa5a64e6ddbc678dcefc74891\transformed\runtime-1.1.0\AndroidManifest.xml:20:5-44
+INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml
+INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml
+		ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml
+		ADDED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Akademik\SMT4\UAS\PPB-Mobile\W14\SimpleCalc\app\src\main\AndroidManifest.xml
